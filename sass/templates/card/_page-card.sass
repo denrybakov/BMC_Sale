@@ -1,0 +1,684 @@
+.page-card
+  margin-top: 11rem
+  &__service
+    padding-top: 0
+
+.card-info
+  padding-top: 2.35rem
+  &__breadcrumbs-card
+    margin: 0
+    margin-bottom: 4.25rem
+  &__gallary
+    max-width: 39.285rem
+    width: 100%
+    height: 39.285rem
+    // height: 100%
+    border: 1px solid $gray2
+  &__slide
+    display: flex
+    justify-content: center
+    align-items: center
+  &__thumbs
+    margin-top: 2rem
+    border: 1px solid $gray2
+    width: 6.214rem
+    height: 6.214rem
+    object-fit: contain
+    padding: 1rem
+    cursor: pointer
+    &:hover
+      border: 1px solid $primary
+  &__col-60
+    max-width: 57.5%
+    width: 57.5%
+  &__section
+    padding-bottom: 1.9rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    border-bottom: 1px solid $gray2
+  &__title
+    margin-top: 0
+    margin-bottom: 0
+    font-size: 1.714rem
+    line-height: 18px
+    +medium
+  &__info-section
+    display: flex
+  &__description
+    margin-right: 1rem
+  &__block-price
+    padding: 2.2rem 0
+    padding-bottom: 2.6rem
+    margin-bottom: 0
+    border-bottom: 1px dashed $gray2
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__price
+    +bold
+    font-size: 3.4rem
+    text-transform: uppercase
+  &__block-color
+    padding: 2.15rem 0
+    display: flex
+    align-items: center
+    border-bottom: 1px dashed $gray2
+  &__delivery
+    width: 100%
+    border-bottom: 1px dashed $gray2
+    padding-bottom: 2.1rem
+  &__content-1
+    display: flex
+    padding-left: 2.3rem
+    padding-top: 0.4rem
+  &__label
+    padding: 0 2.15rem 1.5rem 2.1rem
+    &:before
+      left: 2px
+      top: 5px
+    &:after
+      left: 6px
+      top: 9px
+    &--2
+      padding: 0 2.15rem 1.5rem 4.1rem
+      &:before
+        left: 28px
+        top: 5px
+      &:after
+        top: 9px
+        left: 32px
+    &--3
+      padding-left: 1.9rem
+      &:before
+        left: -3px
+      &:after
+        top: 4px
+        left: 1px
+    &--4
+      padding-left: 2.1rem
+      &:before
+        top: 0
+        left: 1px
+      &:after
+        top: 4px
+        left: 5px
+        //--
+          //--
+  //--кнопки 
+  &__buttons
+    display: flex
+    justify-content: space-between
+    padding-top: 2.1rem
+    padding-bottom: 2.1rem
+    border-bottom: 1px dashed $gray2
+  &__section-flex
+    max-width: 34rem
+    width: 100%
+  &__button
+    position: relative
+    display: inline-block
+    margin-right: 1.2rem
+    max-width: 17.857rem
+    width: 100%
+    border: 2px solid $primary
+    padding: 1rem 1rem 1.05rem 2.4rem
+    color: $light
+    font-size: 1.285rem
+    background-color: $primary
+    transition: 0.5s
+    transition: color 1s
+    &:hover
+      background-color: $light
+      color: $primary
+    &:before
+      content: ''
+      position: absolute
+      top: 17px
+      left: 19px
+      width: 14px
+      height: 17px
+      display: inline-block
+      background: url(../img/header/market-icon.png) no-repeat center / cover
+    &:hover:before
+      width: 14px
+      height: 17px
+      background: url(../img/header/market-icon2.png) no-repeat center / cover
+    &-love
+      position: relative
+      display: inline-block
+      border: 2px solid $black
+      padding: 1rem 2.3rem 1rem 3.9rem
+      color: $black
+      font-size: 1.285rem
+      background-color: $light
+      transition: 0.5s
+      transition: color 1s
+      &:before
+        content: ''
+        position: absolute
+        top: 17px
+        left: 21px
+        width: 16px
+        height: 15px
+        display: inline-block
+        background: url(../img/header/heart-black.svg) no-repeat center / cover
+      &:hover
+        background-color: $black
+        color: $light
+      &:hover:before
+        width: 16px
+        height: 15px
+        background: url(../img/header/love.png) no-repeat center / contain
+    &-offer
+      position: relative
+      border: 2px solid $black
+      margin-right: 0.1rem
+      padding: 1rem 1.8rem 1.1rem 1.8rem
+      color: $black
+      font-size: 1.285rem
+      background-color: $light
+      transition: 0.5s
+      transition: color 1s
+      &:hover
+        background-color: $black
+        color: $light
+        //---------------------block-social
+  &__block-social
+    padding-top: 1.6rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__text
+    display: flex
+    &--goods
+      font-size: 1rem
+      margin-right: 1.9rem
+    &--favorite
+      margin-left: 0.3rem
+    &--share
+      margin-right: 1.2rem
+      margin-top: 0.3rem
+  &__social-links
+    display: flex
+    // align-items: center
+
+  &__links
+    display: inline-block
+    width: 16px
+    height: 17px
+    margin-right: 1.3rem
+    margin-top: 0
+    &--tw
+      background: url(../img/card/tw2.svg) no-repeat center / contain
+      &:hover
+        background: url(../img/card/tw.svg) no-repeat center / contain
+    &--fb
+      background: url(../img/card/fb2.svg) no-repeat center / contain
+      &:hover
+        background: url(../img/card/fb.svg) no-repeat center / contain
+    &--vk
+      background: url(../img/card/vk2.svg) no-repeat center / contain
+      &:hover
+        background: url(../img/card/vk.svg) no-repeat center / contain
+    &--ok
+      background: url(../img/card/o2.svg) no-repeat center / contain
+      &:hover
+        background: url(../img/card/o.svg) no-repeat center / contain
+    &--gl
+      width: 20px
+      height: 21px
+      background: url(../img/card/g+2.svg) no-repeat center / contain
+      &:hover
+        background: url(../img/card/g+.svg) no-repeat center / contain
+    &--ln
+      margin-right: 0
+      width: 14px
+      height: 15px
+      background: url(../img/card/in2.svg) no-repeat center / contain
+      &:hover
+        background: url(../img/card/in.svg) no-repeat center / contain
+
+  &__col-60-bottom
+    padding-top: 6.8rem
+    max-width: 74.3%
+    width: 100%
+
+.color-text
+  font-size: 1.142rem
+  margin-right: 2.2rem
+.color-list
+  list-style: none
+  margin: 0
+  padding: 0
+  display: flex
+  &__item
+    font-size: 1rem
+    display: flex
+    align-items: center
+    border: 1px solid $gray2
+    padding: 0.08rem 1.25rem 0.08rem 0.08rem
+    cursor: pointer
+    margin-right: 0.8rem
+    &:hover
+      border: 1px solid $primary
+    &:before
+      content: ''
+      margin-right: 1.5rem
+      display: inline-block
+      width: 26px
+      height: 26px
+    &--green
+      &:before
+        background-color: #86c255
+    &--yellow
+      &:before
+        background-color: #e9eb5b
+    &--red
+      &:before
+        background-color: #e84b4b
+    &--blue
+      &:before
+        background-color: #4b91e8
+
+.price-subtitle
+  font-size: 1.714rem
+.price-description
+  margin-bottom: 0
+  margin-top: 0.9rem
+  font-size: 1.142rem
+  b
+    color: $black
+    +bold
+
+.breadcrumbs-card
+  padding: 0
+  list-style: none
+  display: flex
+  &__item
+    +regular
+    font-size: 1.1rem
+    margin-right: 1.05rem
+    color: $black
+    &:after
+      content: ''
+      margin-left: 1rem
+      display: inline-block
+      width: 1px
+      height: 10px
+      background-color: $gray
+    &--first
+      color: $black
+    &--active
+      pointer-events: none
+      color: $gray
+      &:after
+        display: none
+
+.favorite-block
+  padding-top: 4.35rem
+  padding-bottom: 6.6rem
+  &__row
+    padding-left: 1rem
+  &__swiper
+    height: 100%
+  &-button
+    &__prev
+      display: inline-block
+      width: 45px
+      height: 45px
+      background-color: transparent
+      border: 1px solid #cccccc
+      cursor: pointer
+      background: url(../img/school/prev.png) no-repeat center center
+      z-index: 9
+      &:focus
+        outline: none
+    &__next
+      display: inline-block
+      margin-left: 0.6rem
+      width: 45px
+      height: 45px
+      background-color: $black !important
+      cursor: pointer
+      background: url(../img/school/next.png) no-repeat center center
+      z-index: 9
+      &:focus
+        outline: none
+  //   // max-height: 50rem
+
+  &__section-title
+    display: flex
+    justify-content: center
+    margin-bottom: 3rem
+  &__title
+    margin: auto
+    text-align: center
+    // max-width: 35%
+    &:after, &:before
+      content: ''
+      display: inline-block
+      margin-bottom: 0.2rem
+      max-width: 380px
+      min-width: 280px
+      height: 8px
+    &:before
+      margin-right: 4rem
+      background: url(../img/category/lineLeft.png) no-repeat center / cover
+    &:after
+      margin-left: 4rem
+      background: url(../img/category/lineRight.png) no-repeat center / cover
+
+.delivery
+  &-text
+    margin-top: 2rem
+    margin-bottom: 1.8rem
+    font-size: 1.142rem
+  &-text2
+    margin-top: 1.2rem
+    margin-bottom: 1.5rem
+  &-box
+    display: flex
+  &-group
+    border: 1px solid $gray2
+    margin-right: 0.5rem
+    padding: 0.3rem 0.7rem 0.5rem 0.5rem
+    font-size: 1rem
+    &:hover
+      border: 1px solid $primary
+
+// tab-bottom ---------------------------------------------
+.tab-bottom__label-1
+  +medium
+  padding: 0.9rem 3.2rem 1rem 3rem
+  font-size: 1.285rem
+  &:hover
+    color: $primary
+.tab-bottom__label-2
+  +medium
+  padding: 0.9rem 2.7rem 1rem 3.3rem
+  font-size: 1.285rem
+  &:hover
+    color: $primary
+.tab-bottom__label-3
+  +medium
+  padding: 0.9rem 3.2rem 1rem 1rem
+  font-size: 1.285rem
+  &:hover
+    color: $primary
+
+.content-bottom-1, .content-bottom-2, .content-bottom-3
+  padding: 1.6rem 3rem 1.6rem 3rem !important
+  &__text
+    font-size: 1.285rem
+    &--bold
+      font-size: 1.285rem
+      display: block
+      max-width: 42%
+      width: 100%
+      +bold
+      // margin-right: 25rem
+  &__item
+    padding: 1.16rem 0rem
+    display: flex
+    justify-content: space-between
+    border-bottom: 1px solid rgba($gray, 0.2)
+    &:hover
+      color: $primary
+      background-color: rgba(#e3e2e2, 0.4)
+    &--last
+      border-bottom: none
+
+//viewed-------------------------------------
+.card-info
+  &__col-30-bottom--2
+    padding-top: 5.4rem
+    max-width: 23.3%
+    width: 100%
+  &__title-bottom
+    margin-bottom: 1rem
+    +regular
+    font-size: 1.285rem
+    text-transform: uppercase
+  &__viewed
+    display: flex
+    align-items: flex-start
+    padding-top: 1.5rem
+    padding-bottom: 1.8rem
+    border-bottom: 1px solid rgba($gray, 0.3)
+    transition: background-color 0.5s
+    &:hover
+      background-color: #f5f5f5
+    &--secondary
+      padding-top: 2.2rem
+    &--last
+      padding-top: 2.2rem
+      border-bottom: none
+.viewed
+  &__image
+    margin-right: 2rem
+  &__title
+    margin-top: 0
+    margin-bottom: 0.8rem
+    font-size: 1.142rem
+    line-height: 10px
+  &__description
+    margin-top: 0
+    margin-bottom: 1.2rem
+  &__rating
+    margin-bottom: 0.9rem
+  &__price
+    +regular
+    font-size: 1.714rem
+    margin-top: 0
+    &-text
+      font-size: 1.142rem
+
+@media screen and ( max-width: 1300px )
+  .delivery-box
+    flex-direction: column
+  .card-info
+    &__label
+      &:before
+        top: 2px !important
+      &:after
+        top: 6px
+    &__label--4
+      &:before
+        left: -2px
+      &:after
+        left: 2px
+    &__section-flex
+      // max-width: 33.5rem
+      max-width: auto
+    &__buttons
+      justify-content: center
+    &__button
+      margin-right: 0.5rem
+      &-offer
+        padding: 1rem 0.8rem 1.1rem 0.8rem
+        font-size: 1.19rem
+    &__delivery-group
+      margin-bottom: 1rem
+      &--last
+        margin-bottom: 0
+
+  .viewed__title
+    line-height: 16px
+
+@media screen and ( max-width: 1200px )
+
+  .favorite-block
+    &__title
+      margin: auto
+      text-align: center
+      // max-width: 35%
+      &:after, &:before
+        content: ''
+        display: inline-block
+        margin-bottom: 0.2rem
+        max-width: 300px
+        min-width: 200px
+        height: 5px
+
+  .card-info
+    &__col-60-bottom
+      max-width: 67%
+    &__col-30-bottom--2
+      max-width: 27%
+    &__button
+      &:before
+        top: 11px
+      &-love
+        &:before
+          top: 13px
+      &-offer
+        font-size: 1.02rem
+
+  @media screen and ( max-width: 992px )
+    .favorite-block
+      &__title
+        &:after, &:before
+          display: none
+
+    .color-list
+      flex-wrap: wrap
+      justify-content: space-evenly
+      &__item
+        margin-bottom: 1rem
+
+    .card-info
+      &__button
+        margin-bottom: 1rem
+        max-width: 100%
+        width: 100%
+        &:before
+          display: none
+        &-love
+          margin-bottom: 1rem
+          &:before
+            display: none
+        &-offer
+          display: inline-block
+          text-align: center
+          // padding: 1rem 2.3rem 1rem 3.9rem
+          font-size: 1.285rem
+          max-width: 100%
+          width: 100%
+      &__section-flex
+        display: flex
+        max-width: 100%
+        width: 100%
+        flex-direction: column
+      &__buttons
+        flex-direction: column
+      &__col-60
+        margin-left: 2rem
+        max-width: 54%
+      &__block-social
+        justify-content: center
+        &--favorite
+          margin-left: 0
+      &__text
+        &--share
+          display: none
+      &__social-links
+        display: none
+
+  .tab-bottom
+    &__label
+      &-1
+        padding: 0.9rem 1.2rem 1rem 1rem
+      &-2
+        padding: 0.9rem 0.7rem 1rem 1.3rem
+      &-3
+        padding: 0.9rem 0.2rem 1rem 1rem
+
+  @media screen and ( max-width: 768px )
+    .card-info
+      &__row
+        flex-direction: column
+      &__col-40
+        max-width: 100%
+        margin-bottom: 5rem
+      &__gallary
+        max-width: none
+        height: 35.285rem
+      &__gallary-thumbs
+        max-width: 63%
+        min-width: 55%
+      &__col-60
+        max-width: 100%
+        width: 93% // ??????
+      &__row-bottom
+        flex-direction: column
+      &__col-60-bottom
+        max-width: 100%
+      &__col-30-bottom--2
+        padding-top: 0
+        max-width: 45%
+        margin: 0 auto
+
+  @media screen and ( max-width: 575px )
+    .breadcrumbs-card__item
+      margin-right: 0.5rem
+    .tab-bottom
+      &__label
+        &-1
+          font-size: 1.1rem
+          padding: 0.9rem 0.5rem 1rem 0.5rem
+        &-2
+          font-size: 1.1rem
+          padding: 0.9rem 0.5rem 1rem 0.5rem
+        &-3
+          font-size: 1.1rem
+          padding: 0.9rem 0.5rem 1rem 0.5rem
+    .content-bottom-1__text
+      font-size: 1rem
+      &--bold
+        font-size: 1rem
+
+    .card-info__col-30-bottom--2
+      max-width: 54%
+
+  @media screen and ( max-width: 450px )
+    .card-info
+      padding-top: 0
+      &__col-40
+        min-width: auto
+      &__col-60
+        margin-left: 0
+        width: 100%
+      &__block-price > img
+        display: none
+      &__info-section > .card-info__description
+        display: none
+      &__block-color
+        flex-direction: column
+      &__label--2
+        &:before
+          left: 14px
+        &:after
+          left: 18px
+    .breadcrumbs-card
+      display: none
+
+    .card-info__gallary
+      width: 100%
+    .card-info__thumbs
+      display: none
+    .tab-bottom__label-3
+      display: none !important
+    .card-info__col-30-bottom--2
+      max-width: 90%
+
+    .color-text
+      margin-bottom: 1rem
+    .content-bottom-1
+      padding-left: 1rem !important
+      padding-right: 1rem !important
+      &__text--bold
+        max-width: 30%
+
+    .tab-bottom__label-2
+      display: none !important

@@ -1,0 +1,592 @@
+a
+  text-decoration: none
+  &:focus
+    outline: none
+    box-shadow: none
+  &:hover
+    color: $primary
+.title
+  +light
+  font-size: 2.571rem
+  color: $black
+  &-card
+    color: $black
+    text-decoration: none
+    &:hover
+      color: $primary
+      // text-decoration: underline
+.bold
+  +bold
+.button
+  +regular
+  font-size: 1.285rem
+  text-decoration: none
+  // line-height: 3.428rem
+  padding: 0.94rem 2rem
+  cursor: pointer
+  &:focus
+    outline: none
+    box-shadow: none
+  &__primary
+    // margin-left: 0.2rem
+    color: $light
+    background-color: $black
+    cursor: pointer
+    transition: background 0.5s
+    transition: color 1s
+    border: 2px solid $black
+    &:hover
+      color: $black
+      background-color: transparent
+    &:after
+      content: ''
+      margin-left: 0.9rem
+      margin-bottom: 0.2rem
+      display: inline-block
+      width: 7px
+      height: 10px
+      background: url(../img/right2.svg) no-repeat center / cover
+    &:hover:after
+      width: 7px
+      height: 10px
+      background: url(../img/right.svg) no-repeat center / cover
+  &__secondary
+    border: 2px solid $black
+    color: $black
+    background-color: transparent
+    transition: background 0.5s
+    transition: color 1s
+    &:hover
+      color: $light
+      background-color: $black
+    &:after
+      content: ''
+      margin-left: 0.928rem
+      display: inline-block
+      width: 7px
+      height: 10px
+      background: url(../img/right.svg) no-repeat center / cover
+    &:hover:after
+      width: 7px
+      height: 10px
+      background: url(../img/right2.svg) no-repeat center / cover
+  &__card
+    width: 24px
+    height: 24px
+    border-radius: 50%
+    border: none
+    background: rgba($black, 0.3) url(../img/plus.svg) no-repeat center center / 58%
+    cursor: pointer
+    transition: background-color 1.5s
+    transition: 0.4s
+    &:hover
+      background-color: $black
+    &:focus
+      outline: none
+
+.description
+  color: $gray
+  +light
+.price
+  +regular
+  font-size: 2.142rem
+  color: $dark
+  &__text
+    +regular
+    font-size: 1.142rem
+  &__old
+    display: inline-block
+    padding-left: 1.6rem
+    padding-top: 0.9rem
+    +regular
+    font-size: 1.285rem
+    color: $gray
+    text-decoration: line-through
+
+  //------------Звезды
+.rating
+  position: relative
+  width: 75px
+  height: 16px
+  margin: 0
+  font-size: inherit
+  padding: 0
+  border: none
+  background-image: url(../img/starOff.svg) //off
+  background-size: 15px 14px
+  background-repeat: repeat-x
+  &__input
+    position: absolute
+    width: 1px
+    height: 1px
+    overflow: hidden
+    clip: rect(0 0 0 0)
+
+  &__star
+    position: absolute
+    top: 0
+    left: 0
+    // width: 20px
+    height: 15px
+    font-size: inherit
+    margin: 0
+    background-size: 15px 14px
+    background-repeat: repeat-x
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    &:focus
+      autline: none
+
+.rating__input:checked + .rating__star,
+.rating__star:hover
+  background-image: url(../img/starOn.svg)
+  baclground-repeat: repeat-x
+
+.rating__star:hover ~ .rating__star
+  background-image: url(../img/starOff.svg) //off
+  baclground-repeat: repeat-x
+
+.rating__star:nth-of-type(1)
+  z-index: 5
+  width: 15px
+.rating__star:nth-of-type(2)
+  z-index: 4
+  width: 30px
+.rating__star:nth-of-type(3)
+  z-index: 3
+  width: 45px
+.rating__star:nth-of-type(4)
+  z-index: 2
+  width: 60px
+.rating__star:nth-of-type(5)
+  z-index: 1
+  width: 75px
+
+//-----------------hover image 
+// .col-30
+.card-image-block
+  position: relative
+
+.card-image
+  position: relative
+
+.card-pic
+  position: absolute
+  top: 16px
+  left: -9px
+  z-index: 11
+.card-heart
+  position: absolute
+  top: 18px
+  right: 18px
+  display: inline-block
+  width: 20px
+  height: 19px
+  background: url(../img/love.svg) no-repeat center
+  cursor: pointer
+  &:hover
+    width: 20px
+    height: 19px
+    background: url(../img/love2.svg) no-repeat center
+
+.card-image-content
+  display: none
+  position: absolute
+  top: 0
+  right: 0
+  background-color: rgba(#000, 0.5)
+  width: 100%
+  height: 99%
+  transition: 1s
+
+.button
+  &__card-image
+    // opacity: 0
+    position: absolute
+    top: 56px
+    right: 18px
+    width: 21px
+    height: 21px
+    border-radius: 50%
+    border: none
+    background: $primary url(../img/plus.svg) no-repeat center center / 58%
+    cursor: pointer
+    transition: background-color 1.5s
+    transition: 0.4s
+    &:hover
+      background-color: rgba($primary, 0.7)
+    &:focus
+      outline: none
+
+.card-image-block:hover  .card-image-content
+  display: block
+
+// селекты 
+.select
+  +regular
+  display: block
+  max-width: 319px
+  width: 319px
+  position: relative
+
+.new-select
+  margin-top: 0.7rem
+  +regular
+  border: 1px solid #ced4da
+  padding: 14px 18px
+  cursor: pointer
+  position: relative
+
+.new-select__list
+  border: 1px solid #ced4da
+  cursor: pointer
+  position: absolute
+  top: 45px
+  left: 0
+  width: 100%
+  z-index: 999
+  background-color: $light
+
+.new-select__list.on
+  display: block
+
+.new-select__item span
+  display: block
+  padding: 10px 15px
+
+.new-select__item span:hover
+  color: $primary
+
+.new-select:after
+  content: ''
+  display: block
+  width: 15px
+  height: 15px
+  position: absolute
+  right: 19px
+  top: 15px
+  background: url('../img/down.svg') no-repeat right center
+  -webkit-transition: all .27s ease-in-out
+  -o-transition: all .27s ease-in-out
+  transition: all .27s ease-in-out
+  -webkit-transform: rotate(0deg)
+  -ms-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.new-select.on:after
+  -webkit-transform: rotate(180deg)
+  -ms-transform: rotate(180deg)
+  -o-transform: rotate(180deg)
+  transform: rotate(180deg)
+
+//------2 
+.select2
+  +regular
+  display: block
+  max-width: 202px
+  width: 202px
+  position: relative
+
+.new-select2
+  margin-top: 0.7rem
+  +regular
+  border: 1px solid #ced4da
+  padding: 14px 18px
+  cursor: pointer
+  position: relative
+
+.new-select__list2
+  border: 1px solid #ced4da
+  cursor: pointer
+  position: absolute
+  top: 45px
+  left: 0
+  width: 100%
+  z-index: 999
+  background-color: $light
+
+.new-select__list2.on
+  display: block
+
+.new-select__item2 span
+  display: block
+  padding: 10px 15px
+
+.new-select__item2 span:hover
+  color: $primary
+
+.new-select2:after
+  content: ''
+  display: block
+  width: 15px
+  height: 15px
+  position: absolute
+  right: 19px
+  top: 15px
+  background: url('../img/down.svg') no-repeat right center
+  -webkit-transition: all .27s ease-in-out
+  -o-transition: all .27s ease-in-out
+  transition: all .27s ease-in-out
+  -webkit-transform: rotate(0deg)
+  -ms-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+
+.new-select2.on:after
+  -webkit-transform: rotate(180deg)
+  -ms-transform: rotate(180deg)
+  -o-transform: rotate(180deg)
+  transform: rotate(180deg)
+
+  //========= radio button ==============
+.tabs > input[type="radio"]:checked,
+.tabs > input[type="radio"]:not(:checked),
+.delivery-group > input[type="radio"]:checked,
+.delivery-group > input[type="radio"]:not(:checked),
+  position: absolute
+  display: none
+
+.tabs > input[type="radio"]:checked + label,
+.tabs > input[type="radio"]:not(:checked) + label,
+.delivery-group > input[type="radio"]:checked + label,
+.delivery-group > input[type="radio"]:not(:checked) + label
+  display: inline-block
+  position: relative
+  cursor: pointer
+
+.tabs > input[type="radio"]:checked + label:before,
+.tabs > input[type="radio"]:not(:checked) + label:before,
+.delivery-group > input[type="radio"]:checked + label:before,
+.delivery-group > input[type="radio"]:not(:checked) + label:before
+  content: ''
+  position: absolute
+  // left: 2px
+  // top: 3px
+  width: 18px
+  height: 18px
+  border: 1px solid $gray2
+  background-color: $light
+
+.tabs > input[type="radio"]:checked + label:before,
+.tabs > input[type="radio"]:not(:checked) + label:before,
+.delivery-group > input[type="radio"]:checked + label:before,
+.delivery-group > input[type="radio"]:not(:checked) + label:before
+  border-radius: 100%
+
+.tabs > input[type="radio"]:checked + label:after,
+.tabs > input[type="radio"]:not(:checked) + label:after,
+.delivery-group > input[type="radio"]:checked + label:after,
+.delivery-group > input[type="radio"]:not(:checked) + label:after
+  content: ""
+  position: absolute
+  -ms-transition: all 0.2s ease
+  -webkit-transition: all 0.2s ease
+  -moz-transition: all 0.2s ease
+  -o-transition: all 0.2s ease
+  transition: all 0.2s ease
+
+.tabs > input[type="radio"]:checked + label:after,
+.tabs > input[type="radio"]:not(:checked) + label:after,
+.delivery-group > input[type="radio"]:checked + label:after,
+.delivery-group > input[type="radio"]:not(:checked) + label:after
+  // left: 6px
+  // top: 7px
+  width: 10px
+  height: 10px
+  border-radius: 100%
+  background-color: $black
+
+.tabs > input[type="radio"]:not(:checked) + label:after,
+.delivery-group > input[type="radio"]:not(:checked) + label:after
+  opacity: 0
+.tabs > input[type="radio"]:checked + label:after,
+.delivery-group > input[type="radio"]:checked + label:after
+  opacity: 1
+
+.tabs > div
+  display: none
+  border: 1px solid $gray2
+  border-left: none
+  border-bottom: none
+  border-right: none
+  // padding: 10px 15px
+  font-size: 16px
+
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2
+  display: block
+.tabs > label
+  display: inline-block
+  text-align: center
+  vertical-align: middle
+  user-select: none
+  background-color: #fff
+  border: none
+  border-bottom: 1px solid $gray2
+  // padding: 2px 8px
+  font-size: 16px
+  line-height: 1.5
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out
+  cursor: pointer
+  position: relative
+  top: 1px
+.tabs > label:not(:first-of-type)
+  border-left: none
+
+.tabs > label:not(:last-of-type)
+  border-bottom: 1px solid #fff
+
+.tabs > input[type="radio"]:checked + label
+  // padding: 0 2.15rem 1.5rem 2.1rem
+  background-color: #fff
+  border-left: $light
+  border-top: $light
+  border-right: 1px solid $gray2
+  border-bottom: 1px solid $light
+
+//---------tabs bottom ------------------------------------------
+
+.tabs-bottom
+  max-width: 100%
+  width: 100%
+  height: 470px
+  // height: 100%
+
+.tabs-bottom > input[type="radio"]
+  display: none
+
+.tabs-bottom > div
+  display: none
+  border: none
+  padding: 10px 15px
+  background-color: #f5f5f5
+  font-size: 16px
+
+#tab-bottom-1:checked ~ #content-bottom-1,
+#tab-bottom-2:checked ~ #content-bottom-2,
+#tab-bottom-3:checked ~ #content-bottom-3
+  display: block
+
+.tabs-bottom > label
+  display: inline-block
+  text-align: center
+  vertical-align: middle
+  user-select: none
+  background-color: $light
+  // border: 1px solid #e0e0e0
+  // padding: 2px 8px
+  // font-size: 16px
+  line-height: 1.5
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out
+  cursor: pointer
+  position: relative
+  top: 1px
+
+.tabs-bottom > label:not(:first-of-type)
+  border-left: none
+
+.tabs-bottom > input[type="radio"]:checked + label
+  background-color: #f5f5f5
+  border-bottom: none
+
+
+
+
+.input 
+  padding: 1rem 4rem 1rem 1rem
+  color: $black
+  border: 1px solid $gray2
+  background-color: transparent
+  transition: border 1s
+  // transition: background 0.5s
+  &:focus
+    outline: none 
+    border: 1px solid $primary
+  &__user
+    background: url(../img/user.svg) no-repeat 235px center / 4%
+    &:focus 
+      background: url(../img/user2.svg) no-repeat 235px center / 4%
+  &__phone 
+    background: url(../img/phone.svg) no-repeat 235px center / 5%
+    &:focus 
+      background: url(../img/phone2.svg) no-repeat 235px center / 5%
+  &__email
+    margin-bottom: 2rem
+    background: url(../img/mail.svg) no-repeat 235px center / 4%
+    &:focus 
+      background: url(../img/mail2.svg) no-repeat 235px center / 4%
+
+.policy
+  &__label
+    display: flex
+    align-items: center
+    font-size: 0.9rem
+    +light
+    &::before
+      content: ''
+      width: 18px
+      height: 18px
+      margin-right: 0.60rem
+      border: 1px solid $black
+      border-radius: 100%
+      cursor: pointer
+    &--center
+      justify-content: center
+  &__checkbox
+    opacity: 0
+    visibility: hidden
+    &:checked + .policy__label::before
+      background: $black url(../img/check.svg) no-repeat center / 0.9rem
+  &__link 
+    text-decoration: underline 
+    color: $primary
+    &:hover 
+      text-decoration: none 
+
+.modal
+  &__button 
+    &:after
+      display: none 
+
+.modal
+  &__policy
+    position: relative
+  &__input-group
+    position: relative
+div.invalid
+  position: absolute
+  display: block
+  top: 56px
+  left: 0
+
+div
+  transition: 0.5s ease-in-out
+  &.invalid
+    text-align: center
+    color: tomato
+
+input
+  transition: 0.5s ease-in-out
+  &.invalid
+    border: 1px solid red
+    background: url(../img/err.svg) no-repeat 235px center / 4%
+    &:focus
+      border: 1px solid red
+
+.modal
+  &__policy
+    position: relative
+  &__input-group
+    position: relative
+div.invalid
+  position: absolute
+  display: block
+  top: 48px
+  left: 0
+
+#policyCheckbox-error
+  top: 40px
+  left: 0
+  font-size: 0.8rem

@@ -1,0 +1,183 @@
+.category
+  padding-bottom: 6.5rem
+  &__section-title
+    display: flex
+    justify-content: center
+    margin-bottom: 3rem
+  &__title
+    margin: auto
+    text-align: center
+    // max-width: 35%
+    &:after, &:before
+      content: ''
+      display: inline-block
+      margin-bottom: 0.2rem
+      max-width: 450px
+      min-width: 350px
+      height: 8px
+    &:before
+      margin-right: 4rem
+      background: url(../img/category/lineLeft.png) no-repeat center / cover
+    &:after
+      margin-left: 4rem
+      background: url(../img/category/lineRight.png) no-repeat center / cover
+  &__button
+    display: block
+    margin: 0 auto
+    +medium
+    padding: 13px 27px
+    font-size: 1rem
+    border: 2px solid $black
+    background-color: transparent
+    transition: background 0.5s
+    transition: color 1s
+    &:hover
+      background-color: $black
+      color: $light
+    &:after
+      content: ''
+      margin-left: 0.5rem
+      margin-bottom: -0.2rem
+      display: inline-block
+      width: 7px
+      height: 10px
+      background: url(../img/down.svg) no-repeat center / cover
+    &:hover:after
+      display: inline-block
+      width: 7px
+      height: 10px
+      background: url(../img/down2.svg) no-repeat center
+
+.category-list
+  list-style: none
+  padding: 0 0 1rem 0
+  margin: 0 0 2rem 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__item
+    display: inline-block
+    min-width: 23rem
+    // margin-right: 0.5rem
+    width: 100%
+    padding: 1.428rem 0 1.428rem 6.385rem
+    font-size: 1.142rem
+    text-decoration: none
+    color: $black
+    background-color: #f6f6f6
+    border-radius: 8px
+    transition: background 0.8s
+    transition: color 0.5s
+    &:hover
+      color: $light
+      background-color: $primary
+
+    &--1
+      position: relative
+      padding: 1.428rem 0 1.428rem 6.4rem
+      &:before
+        content: ''
+        position: absolute
+        top: 18px
+        left: 18px
+        display: inline-block
+        width: 20px
+        height: 19px
+        background: url(../img/category/pic1-1.png) no-repeat center
+      &:hover
+        color: $light
+        background-color: $primary
+      &:hover:before
+        background: url(../img/category/pic1-2.png) no-repeat center
+
+    &--2
+      position: relative
+      padding: 1.428rem 0 1.428rem 6.885rem
+      &:before
+        content: ''
+        position: absolute
+        top: 20px
+        left: 15px
+        display: inline-block
+        width: 20px
+        height: 19px
+        background: url(../img/category/pic2.png) no-repeat center
+      &:hover:before
+        background: url(../img/category/pic2-1.png) no-repeat center
+
+    &--3
+      position: relative
+      padding: 1.428rem 0 1.428rem 4.885rem
+      &:before
+        content: ''
+        position: absolute
+        top: 18px
+        left: 21px
+        display: inline-block
+        width: 20px
+        height: 19px
+        background: url(../img/category/pic3.png) no-repeat center
+      &:hover:before
+        background: url(../img/category/pic3-1.png) no-repeat center
+    &--4
+      position: relative
+      padding: 1.428rem 0 1.428rem 5.685rem
+      &:before
+        content: ''
+        position: absolute
+        top: 18px
+        left: 23px
+        display: inline-block
+        width: 20px
+        height: 19px
+        background: url(../img/category/pic4.png) no-repeat center
+        transition: background 0.5s
+        transition: color 1s
+      &:hover:before
+        background: url(../img/category/pic4-1.png) no-repeat center
+
+@media screen and ( max-width: 1300px )
+  .category-list
+    justify-content: space-evenly
+    flex-wrap: wrap
+    &__item
+      margin: 0 1rem 1rem 1rem
+
+@media screen and ( max-width: 1200px )
+  .category
+    &__title
+      &:after, &:before
+        max-width: 350px
+        min-width: 300px
+        height: 8px
+
+@media screen and ( max-width: 992px )
+  .category
+    &__title
+      &:after, &:before
+        display: none
+
+@media screen and ( max-width: 768px )
+  .category
+    padding-top: 0
+  .category-list
+    &__item
+      margin: 1rem 0
+      width: 100%
+      &--1
+        padding: 1.428rem 0 1.428rem 6rem
+        &:before
+          top: 14px
+      &--2
+        padding: 1.428rem 0 1.428rem 6rem
+        &:before
+          top: 14px
+      &--3
+        padding: 1.428rem 0 1.428rem 6rem
+        &:before
+          top: 14px
+      &--4
+        padding: 1.428rem 0 1.428rem 6rem
+        &:before
+          top: 14px
+          left: 19px

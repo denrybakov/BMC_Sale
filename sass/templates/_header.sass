@@ -1,0 +1,350 @@
+.page-catalog  .header
+  background-color: $light
+.page-catalog .header-top
+  background-color: $light
+.page-card  .header
+  background-color: $light
+.page-card .header-top
+  background-color: $light
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  background-color: $bgFiollet
+  z-index: 9999
+  &-top
+    padding: 0.328rem 0
+    background-color: $bgFiollet
+    border-bottom: 1px solid #d7d7d7
+    &__logo
+      margin-right: 3rem
+    &__navigation
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__list
+      margin: 0
+      // margin: 0 32.5rem 0 0
+      display: flex
+    &__enter
+      display: flex
+      align-items: center
+      color: $black
+      text-decoration: none
+      &:hover
+        text-decoration: underline
+    &__lock
+      margin-left: 0.642rem
+      display: inline-block
+      width: 12px
+      height: 14px
+      background: url(../img/header/lock2.svg) no-repeat center / cover
+      &:hover
+
+  &-bottom
+    margin-top: 0.2rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-bottom: 1.2rem
+
+    &__logo
+      margin-top: 1rem
+    &__navigation
+      display: flex
+
+.navigation
+  padding-top: 2.2rem
+  margin-right: 0
+  &__item
+    margin-right: 2.32rem
+    padding-bottom: 0.7rem
+    +medium
+    font-size: 1.142rem
+    font-weight: bold
+    color: $black
+    text-decoration: none
+    &:hover:last-child
+      border-bottom: none
+    &:hover
+      color: $primary
+      border-bottom: 1px solid $primary
+    &--catalog
+      &:after
+        content: ''
+        margin: auto 0 0.21rem 0.642rem
+        display: inline-block
+        width: 8px
+        height: 6px
+        background: url(../img/header/down.svg) no-repeat center / cover
+      &:hover:after
+        width: 8px
+        height: 5px
+        background: url(../img/header/down2.svg) no-repeat center / cover
+
+    &--search
+      padding: 0
+      margin-right: 3.571rem
+      text-decoration: none
+      &:hover
+        border-bottom: none
+  &__search
+    display: inline-block
+    text-decoration: none
+    width: 17px
+    height: 16px
+    background: url(../img/header/search2.svg) no-repeat center / cover
+
+.header-block
+  margin-top: -0.2rem
+  display: flex
+  justify-content: space-between
+
+.favorite
+  margin-right: 0.8rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 4.43rem
+  // max-width: 5rem
+  height: 6rem
+  // max-height: 7rem
+  background: url(../img/header/favorite.png) no-repeat center / cover
+  &__img
+    margin-top: -1rem
+    margin-bottom: 0.7rem
+    width: 21px
+    height: 19px
+    background: url(../img/header/heart.png) no-repeat center / cover
+  &__text
+    color: $primary
+
+.market
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 4.33rem
+  // max-width: 5rem
+  height: 6rem
+  // max-height: 7rem
+  background: url(../img/header/market.png) no-repeat center / cover
+  &__img
+    margin-top: -1rem
+    margin-bottom: 0.7rem
+    display: inline-block
+    width: 18px
+    height: 21px
+    background: url(../img/header/market-icon.png) no-repeat center / cover
+  &__text
+    color: $light
+//
+
+.list
+  &-link
+    padding: 0
+    list-style: none
+    &__item
+      display: flex
+      align-items: center
+      margin-right: 1.628rem //---------------------------
+
+      color: $black
+      a
+        display: flex
+        align-items: center
+        font-size: 1rem
+        color: $black
+        text-decoration: none
+        &:hover
+          color: $primary
+          text-decoration: underline
+      &:after
+        content: ''
+        width: 1px
+        height: 12px
+        display: flex
+        align-items: center
+        margin-top: 2px
+        margin-left: 1.428rem
+        background-color: #d0d0d0
+      &:last-of-type:after
+        display: none
+
+  &-message
+    margin-left: 0.2rem
+    display: inline-block
+    width: 15px
+    height: 11px
+    background: url(../img/header/message2.svg) no-repeat center
+  &-market
+    margin-left: 0.3rem
+    display: inline-block
+    width: 13px
+    height: 12px
+    background: url(../img/header/market2.svg) no-repeat center
+  &-world
+    margin-left: 0.3rem
+    display: inline-block
+    width: 14px
+    height: 13px
+    background: url(../img/header/globe2.svg) no-repeat center
+  &-eye
+    margin-left: 0.3rem
+    display: inline-block
+    width: 15px
+    height: 11px
+    background: url(../img/header/eye2.svg) no-repeat center
+  &-setting
+    margin-left: 0.3rem
+    display: inline-block
+    width: 13px
+    height: 13px
+    background: url(../img/header/setting2.svg) no-repeat center
+  &-android
+    margin-left: 0.3rem
+    display: inline-block
+    width: 20px
+    height: 21px
+    background: url(../img/header/android.png) no-repeat center / cover
+
+.block-flex
+  display: flex
+
+.list-link__item--message:hover > .list-message,
+.list-link__item--message:active > .list-message
+  background: url(../img/header/message.svg) no-repeat center
+
+.list-link__item--market:hover > .list-market,
+.list-link__item--market:active > .list-market
+  background: url(../img/header/market.svg) no-repeat center
+
+.list-link__item--world:hover > .list-world,
+.list-link__item--world:active > .list-world
+  background: url(../img/header/globe.svg) no-repeat center
+
+.list-link__item--eye:hover > .list-eye,
+.list-link__item--eye:active > .list-eye
+  background: url(../img/header/eye.svg) no-repeat center
+
+.list-link__item--setting:hover > .list-setting,
+.list-link__item--setting:active > .list-setting
+  background: url(../img/header/setting.svg) no-repeat center
+
+.list-link__item--android:hover > .list-android,
+.list-link__item--android:active > .list-android
+  background: url(../img/header/android2.png) no-repeat center / cover
+
+.header-top__enter:hover > .header-top__lock
+  background: url(../img/header/lock.svg) no-repeat center / cover
+
+.mobile-header
+  display: none
+  #menu__toggle
+    opacity: 0
+    display: none
+  .menu__btn
+    display: flex
+    align-items: center
+    position: fixed
+    top: 28px
+    right: 20px
+    width: 28px
+    height: 26px
+    cursor: pointer
+    z-index: 99999991 //?
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after
+    display: block
+    position: absolute
+    width: 100%
+    height: 2px
+    background-color: $primary
+  .menu__btn > span::before
+    content: ''
+    top: -8px
+  .menu__btn > span::after
+    content: ''
+    top: 8px
+  .menu__box
+    display: block
+    position: fixed
+    visibility: hidden
+    top: 0
+    right: -100%
+    width: 300px
+    height: 100%
+    margin: 0
+    padding: 80px 0
+    list-style: none
+    text-align: center
+    background-color: $bgFiollet
+    // box-shadow: 1px 0px 6px rgba(0, 0, 0, .2)
+    z-index: 999999
+  .menu__item
+    display: block
+    padding: 12px 24px
+    color: $black
+    +medium
+    font-size: 20px
+    font-weight: 600
+    text-decoration: none
+    z-index: 99
+  .menu__item:hover
+    background-color: $hover
+  #menu__toggle:checked ~ .menu__btn > span
+    transform: rotate(45deg)
+
+  #menu__toggle:checked ~ .menu__btn > span::before
+    top: 0
+    transform: rotate(0)
+
+  #menu__toggle:checked ~ .menu__btn > span::after
+    top: 0
+    transform: rotate(90deg)
+
+  #menu__toggle:checked ~ .menu__box
+    visibility: visible
+    right: 0
+
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after
+    transition-duration: .25s
+  .menu__box
+    transition-duration: .25s
+  .menu__item
+    transition-duration: .25s
+
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+
+  .navigation
+    &__item
+      margin-right: 2rem
+      &--catalog:after
+        margin: auto 0 0.11rem 0.642rem
+  .favorite
+    max-width: 4.33rem
+  .header-block
+    margin-top: -0.7rem
+
+@media screen and ( max-width: 992px )
+  .header
+    display: none
+    &-top, &-bottom
+      display: none
+  .mobile-header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    display: block
+    padding: 1rem 0
+    background-color: $bgFiollet
+    border-bottom: 1px solid rgba($gray, 0.5)
+    z-index: 999999999999

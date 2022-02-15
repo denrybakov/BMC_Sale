@@ -1,0 +1,224 @@
+.footer
+  background-color: #f6f6f6
+  padding-top: 2.5rem
+  &__row
+    margin-bottom: 2.85rem
+  &__col-30
+    max-width: 25%
+    &--app-mob
+      margin-right: 2rem
+      max-width: 18% //???
+      display: flex
+      flex-direction: column
+    &--platform
+      margin-right: 13.1rem
+    &--contacts
+      padding-top: 1.7rem
+      max-width: 220px
+
+  &__title
+    +medium
+    font-size: 1.285rem
+    max-width: 14.5rem
+    line-height: 24px
+    margin-bottom: 1.6rem
+    &--mob
+      margin-bottom: 2rem
+    &--platform
+      margin-top: 1.25rem
+      margin-bottom: 0.9rem
+      +medium
+      text-transform: uppercase
+      font-size: 0.857rem
+  &__description
+    margin-bottom: 2.59rem
+    max-width: 19.9rem
+    line-height: 18px
+    +medium
+  &__social-links
+    position: static
+    display: flex
+  &__links
+    display: inline-block
+    width: 14px
+    height: 15px
+    margin-right: 1rem
+    &--tw
+      background: url(../img/school/tw.svg) no-repeat center
+      &:hover
+        background: url(../img/school/tw2.svg) no-repeat center
+    &--fb
+      background: url(../img/school/fb.svg) no-repeat center
+      &:hover
+        background: url(../img/school/fb2.svg) no-repeat center
+    &--vk
+      margin-right: 1.5rem
+      background: url(../img/school/vk.svg) no-repeat center
+      &:hover
+        background: url(../img/school/vk2.svg) no-repeat center
+    &--yt
+      margin-right: 0
+      background: url(../img/school/yt.svg) no-repeat center
+      &:hover
+        background: url(../img/school/yt2.svg) no-repeat center
+  &__image
+    &-google
+      margin-bottom: 2rem
+    &-contacts
+      margin-bottom: 1.8rem
+
+  &__button
+    padding: 0.94rem 2.3rem
+    font-size: 1rem
+    +medium
+    &:hover:after
+      width: 7px
+      height: 10px
+      background: url(../img/right2.svg) no-repeat center / cover
+
+  &__group-contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+
+  &__tel
+    display: block
+    margin-bottom: 0.66rem
+    font-size: 1.714rem
+    +regular
+    color: $black
+    &:hover
+      color: $primary
+      text-decoration: underline
+  &__mail
+    margin-bottom: 5.7rem
+    display: block
+    font-size: 1.142rem
+    color: $gray
+    &:hover
+      color: $primary
+      text-decoration: underline
+  &__visa
+    margin-left: 1.3rem
+    display: inline-block
+    width: 97px
+    height: 27px
+    background: url(../img/footer/visa.png) no-repeat center
+  &__mastercard
+    display: inline-block
+    width: 97px
+    height: 27px
+    background: url(../img/footer/mas.png) no-repeat center
+
+.platform
+  margin: 0
+  padding: 0
+  list-style: none
+  &__item
+    display: inline-block
+    margin-bottom: 1.369rem
+    font-size: 0.857rem
+    color: $gray
+    text-transform: uppercase
+    &:hover
+      text-decoration: underline
+
+.footer-info
+  padding: 1.428rem 0
+  background-color: $black
+  color: $light
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__text
+    margin: 0
+  &__link
+    color: #919191
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+
+@media screen and ( max-width: 1200px )
+  .footer
+    &__col-30
+      max-width: 25%
+      &--link
+        margin-right: 3rem
+      &--app-mob
+        margin-right: 2rem
+      &--platform
+        margin-right: 4.1rem
+      &--contacts
+        padding-top: 1.7rem
+        max-width: 220px
+
+@media screen and ( max-width: 992px )
+  .footer
+    &__row
+      flex-wrap: wrap
+      justify-content: space-between
+      padding-right: 1rem
+      padding-left: 1rem
+
+    &__title--mob
+      text-align: right
+
+    &__col-30
+      &--link
+        width: 100%
+        max-width: 50%
+        order: 1
+      &--app-mob
+        margin-right: 0
+        align-items: flex-end
+        order: 2 //4
+        width: 100%
+        max-width: 30%
+      &--platform
+        order: 3
+        width: 100%
+        max-width: 45%
+      &--contacts
+        order: 4 //2
+        width: 300px
+
+    &__mob-list
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+
+@media screen and ( max-width: 575px )
+  .footer
+    &__row
+      // flex-direction: column
+      // justify-content: center
+      // align-items: center
+      flex-wrap: nowrap
+    &__col-30
+      // max-width: 50%
+      &--link
+        display: none
+      &--app-mob
+        display: none
+      &--platform
+        max-width: 32%
+  .footer-info
+    &__text
+      font-size: 1rem
+      max-width: 58%
+
+@media screen and ( max-width: 450px )
+  .footer
+    &__row
+      flex-direction: column
+      align-items: center
+
+    &__col-30--platform
+      max-width: 100%
+      margin-right: 0
+      text-align: center
+    &__title--platform
+      width: 100%
+      max-width: 100%
+  .platform

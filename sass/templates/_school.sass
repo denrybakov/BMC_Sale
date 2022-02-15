@@ -1,0 +1,173 @@
+.school-form
+  margin-top: 9.1rem
+  padding-top: 1.8rem
+  // border-top: 3px solid red
+  background-color: $bgFiollet
+  &__title
+    +light
+    margin-top: 0
+    font-size: 2.581rem
+    text-transform: uppercase
+    letter-spacing: 0.36px
+    line-height: 3.428rem
+    margin-bottom: 3.35rem
+    &--bold
+      +bold
+  &__slide
+    display: flex
+    justify-content: center
+  &__image
+    margin-left: 9.5rem
+    &--slide-2
+      margin-left: 33rem
+    &--mob
+      display: none
+      &-slide-2
+        display: none
+
+  &__prev
+    position: absolute
+    top: 69.9%
+    left: 0
+    width: 45px
+    height: 45px
+    background-color: transparent
+    border: 1px solid #cccccc
+    cursor: pointer
+    background: url(../img/school/prev.png) no-repeat center center
+    z-index: 9
+    &:focus
+      outline: none
+  &__next
+    position: absolute
+    top: 69.9%
+    left: 57px
+    width: 45px
+    height: 45px
+    background-color: $black !important
+    cursor: pointer
+    background: url(../img/school/next.png) no-repeat center center
+    z-index: 9
+    &:focus
+      outline: none
+
+.box-content
+  margin-bottom: 1.7rem
+  position: absolute
+  top: 10.5%
+  left: 0
+  max-width: 30.35rem
+  z-index: 9
+  &:after, &:before
+    content: ''
+    display: block
+    width: 50px
+    height: 1px
+    background-color: #cccccc
+  &:after
+    margin-top: 3rem
+  &:before
+    margin-bottom: 2rem
+
+.social-links
+  position: absolute
+  bottom: 3.214rem
+  right: 0
+  display: flex
+  flex-direction: column
+  z-index: 9
+  &__item
+    margin-top: 1.5rem
+    display: block
+    width: 14px
+    height: 15px
+    &--tw
+      background: url(../img/school/tw.svg) no-repeat center
+      &:hover
+        background: url(../img/school/tw2.svg) no-repeat center
+    &--fb
+      background: url(../img/school/fb.svg) no-repeat center
+      &:hover
+        background: url(../img/school/fb2.svg) no-repeat center
+    &--vk
+      background: url(../img/school/vk.svg) no-repeat center
+      &:hover
+        background: url(../img/school/vk2.svg) no-repeat center
+    &--yt
+      background: url(../img/school/yt.svg) no-repeat center
+      &:hover
+        background: url(../img/school/yt2.svg) no-repeat center
+
+@media screen and ( max-width: 1300px )
+  .school-form
+    &__image
+      margin-left: 24rem
+      &--slide-2
+        margin-left: 32rem
+
+@media screen and ( max-width: 1200px )
+  .school-form
+    &__title
+      font-size: 2.3rem
+    &__image
+      margin-left: 18rem
+      &--slide-2
+        margin-left: 18rem
+
+@media screen and ( max-width: 992px )
+  .school-form
+    margin-top: 7.1rem
+    &__image
+      display: none
+      &--mob
+        display: block
+        margin-left: 23rem
+        width: 62%
+        &-slide-2
+          display: block
+          width: 46.5%
+          margin-left: 26rem
+      &--slide-2
+        display: none
+  .box-content
+    &:after, &:before
+      display: none
+
+@media screen and ( max-width: 768px )
+  .school-form
+    &__image--mob-slide-2
+      margin-left: 21rem
+    &__title
+      font-size: 2rem
+      line-height: 2.628rem
+  .box-content
+    max-width: 24.35rem
+
+@media screen and ( max-width: 575px )
+  .box-content
+    left: 7%
+    // transform: translate(-20%, 0)
+    margin-top: -2rem
+    max-width: 29rem
+  .school-form
+    margin-top: 3.1rem
+    padding-top: 4.8rem
+    &__title
+      font-size: 1.5rem
+    &__image--mob
+      margin-top: 5rem
+      margin-left: 0
+      &-slide-2
+        margin-left: 7rem
+        margin-top: 4.9rem
+    &__prev
+      top: 80.9%
+      left: 5%
+    &__next
+      top: 80.9%
+      left: 73%
+  .button__primary
+    display: none
+
+  .social-links
+    display: none

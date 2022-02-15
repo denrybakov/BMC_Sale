@@ -1,0 +1,106 @@
+.service
+  padding-top: 6.55rem
+  padding-bottom: 7.3rem
+  &__section-title
+    display: flex
+    justify-content: center
+    margin-bottom: 3rem
+  &__title
+    margin: auto
+    text-align: center
+    // max-width: 35%
+    &:after, &:before
+      content: ''
+      display: inline-block
+      margin-bottom: 0.2rem
+      max-width: 450px
+      min-width: 350px
+      height: 8px
+    &:before
+      margin-right: 4rem
+      background: url(../img/category/lineLeft.png) no-repeat center / cover
+    &:after
+      margin-left: 4rem
+      background: url(../img/category/lineRight.png) no-repeat center / cover
+
+  &__row
+    margin-bottom: 4.3rem
+  &__col-30
+    margin-right: 1rem
+
+  &__image
+    margin-bottom: 0
+  &__subtitle
+    margin-top: 0.8rem
+    margin-bottom: 0.5rem
+    font-size: 1.285rem
+    +regular
+    &:hover
+      color: $primary
+  &__description
+    &:hover
+      text-decoration: underline
+      color: $primary
+  &__btn-group
+    display: flex
+    justify-content: center
+    align-items: center
+  &-button
+    &__prev
+      display: inline-block
+      width: 45px
+      height: 45px
+      background-color: transparent
+      border: 1px solid #cccccc
+      cursor: pointer
+      background: url(../img/school/prev.png) no-repeat center center
+      z-index: 9
+      &:focus
+        outline: none
+    &__next
+      display: inline-block
+      margin-left: 0.6rem
+      width: 45px
+      height: 45px
+      background-color: $black !important
+      cursor: pointer
+      background: url(../img/school/next.png) no-repeat center center
+      z-index: 9
+      &:focus
+        outline: none
+
+@media screen and ( max-width: 1200px )
+  .service
+    &__title
+      margin: auto
+      text-align: center
+      // max-width: 35%
+      &:after, &:before
+        content: ''
+        display: inline-block
+        margin-bottom: 0.2rem
+        max-width: 350px
+        min-width: 250px
+        height: 5px
+
+@media screen and ( max-width: 992px )
+  .service
+    &__row
+      flex-wrap: wrap
+      justify-content: space-evenly
+    &__col-30
+      margin-bottom: 3rem
+    &__title
+      &:after, &:before
+        display: none
+
+@media screen and ( max-width: 768px )
+  .service
+    &__col-30
+      max-width: 38%
+
+@media screen and ( max-width: 575px )
+  .service
+    &__col-30
+      max-width: 83%
+      margin-right: 0

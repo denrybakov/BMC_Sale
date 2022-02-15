@@ -1,0 +1,53 @@
+.popular
+  padding-bottom: 6.6rem
+  &__row
+    margin-bottom: 3.85rem
+  &__col-30
+    margin-right: 1rem
+  &__content
+    padding-left: 1.5rem
+    padding-top: 0.5rem
+    border-bottom: 1px solid $gray
+  &__title-card
+    +regular
+    font-size: 1.285rem
+    margin-bottom: 0.5rem
+  &__description
+    display: inline-block
+    margin-bottom: 1.3rem
+  &__rating
+    margin-bottom: 2.1rem
+
+  &__price
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 1.5rem
+    padding-left: 1.5rem
+    padding-right: 1.5rem
+  &__button
+    display: block
+    max-width: 13.928rem
+    // max-width: 20%
+    margin: 0 auto
+    padding: 0.94rem 2.3rem
+    font-size: 1rem
+
+@media screen and ( max-width: 992px )
+  .popular
+    &__row
+      flex-wrap: wrap
+      justify-content: space-evenly
+    &__col-30
+      margin-bottom: 3rem
+
+@media screen and ( max-width: 768px )
+  .popular
+    &__col-30
+      max-width: 38%
+
+@media screen and ( max-width: 575px )
+  .popular
+    &__col-30
+      max-width: 83%
+      margin-right: 0

@@ -1,0 +1,289 @@
+.page-catalog
+  margin-top: 11rem
+
+.menu
+  &__navigation-top
+    margin-top: 2rem
+    width: 100%
+    display: flex
+    justify-content: space-between
+  &__filter
+    display: flex
+  &__label
+    color: $gray
+    +medium
+    // margin-bottom: 1rem
+  &__select
+    color: $black
+
+  &__card-col-30
+    margin-right: 0
+    margin-top: 5.2rem
+
+    &--nav
+      max-width: 22.85rem
+      width: 100%
+  &__section-title
+    border-bottom: 1px solid $gray
+
+  &__title
+    width: 100%
+    font-size: 1.714rem
+    margin-top: 1rem
+    margin-bottom: 1.5rem
+  &__section-catalog
+    width: 100%
+  &__category-list
+    margin-top: 1.16rem
+    margin-bottom: 0
+    padding-bottom: 0.8rem
+    display: flex
+    flex-direction: column
+    max-width: 100%
+    width: 99%
+    li
+      width: 100%
+  &__list-item
+    display: block
+    margin-top: 1rem
+    padding: 1.428rem 0 1.428rem 4.985rem
+    // width: 22.714rem
+    width: 100%
+    min-width: 13rem
+    font-size: 1.142rem
+    text-decoration: none
+    color: $black
+    background-color: #f6f6f6
+    border-radius: 8px
+    transition: background 0.8s
+    transition: color 0.5s
+    &:hover
+      color: $light
+      background-color: $primary
+    &--1
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: 18px
+        left: 18px
+        display: inline-block
+        width: 20px
+        height: 19px
+        background: url(../img/page2/rybaha2.png) no-repeat center
+      &:hover
+        color: $light
+        background-color: $primary
+      &:hover:before
+        background: url(../img/page2/rubaha.png) no-repeat center
+    &--2
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        top: 18px
+        left: 18px
+        display: inline-block
+        width: 22px
+        height: 19px
+        background: url(../img/page2/noga.png) no-repeat center
+      &:hover
+        color: $light
+        background-color: $primary
+      &:hover:before
+        background: url(../img/page2/noga2.png) no-repeat center
+
+  &__col-100
+    max-width: 74.6%
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  &__bottom
+    margin-top: 4rem
+    max-width: 100%
+    width: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+  &__description
+    display: block
+    font-size: 1.142rem
+    margin-bottom: 1.05rem
+  &__count-goods
+    +bold
+  &__page1, &__page2
+    +bold
+  &__pagination
+    margin: 0
+    margin-left: 0.9rem
+
+  //frvdfvdf
+.filter__item
+  margin-right: 2.1rem
+  &:last-child
+    margin-right: 0
+
+.breadcrumbs-list
+  margin: 0
+  padding: 0
+  list-style: none
+  display: flex
+  &__item
+    +regular
+    font-size: 1.1rem
+    margin-right: 1.05rem
+    color: $gray
+    &--first
+      color: $black
+      &:after
+        content: ''
+        margin-left: 1rem
+        display: inline-block
+        width: 1px
+        height: 10px
+        background-color: $gray
+    &--active
+      pointer-events: none
+
+.menu-list
+  list-style: none
+  margin: 0
+  padding: 0
+  &__item
+    font-size: 1.142rem
+    margin-top: 1.28rem
+    cursor: pointer
+    &--active
+      color: $gray
+    &:hover
+      color: $primary
+      text-decoration: underline
+
+//-------Пагинация нижняяя 
+
+.pagination
+  list-style: none
+  padding: 0
+  display: flex
+  &__item
+    margin-right: 0.7rem
+    width: 3.214rem
+    height: 3.214rem
+    border: 2px solid $black
+    &:hover
+      border-color: $primary
+      color: $primary
+    &--active
+      border-color: rgba($gray, 0.1)
+      background-color: rgba($gray, 0.7)
+      a
+        pointer-events: none
+      &:hover
+        border-color: rgba($gray, 0.1)
+    &--next
+      border-color: $primary
+      background-color: $primary
+      &:hover
+        background-color: $light
+    &--img
+      background: url(../img/pag-next.png) no-repeat center
+      &:hover
+        background: url(../img/pag-next2.png) no-repeat center
+
+    a
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100%
+      height: 100%
+      +medium
+      color: $black
+      &:hover
+        color: $primary
+
+@media screen and ( max-width: 992px )
+  .menu
+    &__col-100
+      flex-wrap: wrap
+      justify-content: space-evenly
+    &__card-col-30
+      max-width: 36%
+      width: 36%
+
+@media screen and ( max-width: 768px )
+  .menu
+    &__card-col-30
+      max-width: 49.2%
+      width: 49.2%
+
+  .select
+    max-width: 180px
+    width: 180px
+  .select2
+    max-width: 180px
+    width: 180px
+
+@media screen and ( max-width: 575px )
+  .page-catalog
+    margin-top: 7rem
+  .menu
+    &__card-col-30
+      max-width: 70%
+      width: 69%
+    &__breadcrumbs-list
+      margin-bottom: 2rem
+    &__filter
+      width: 100%
+      // flex-direction: column
+    &__bottom
+      justify-content: flex-start
+      align-items: flex-start
+      margin-left: -8rem
+    &__pagination
+      margin: 0
+  .navigation-top
+    flex-direction: column
+
+  .filter__item
+    width: 100%
+
+  .select
+    max-width: 100%
+    width: 100%
+  .select2
+    max-width: 100%
+    width: 100%
+
+@media screen and ( max-width: 450px )
+
+  .menu
+    &__filter
+      flex-direction: column
+    &__row
+      flex-direction: column
+      // align-items: center
+      padding-left: 1rem
+      padding-right: 1rem
+    &__col-30--nav
+      max-width: 100%
+      width: 100%
+    &__col-100
+      max-width: 100%
+      width: 100%
+    &__card-col-30
+      max-width: 80%
+      width: 77%
+    &__bottom
+      margin-left: 0
+      justify-content: center
+      align-items: center
+
+  .filter__item
+    margin-bottom: 2rem
+
+  .pagination__item
+    width: 2.8rem
+    height: 2.8rem
